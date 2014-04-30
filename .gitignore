@@ -2,6 +2,11 @@
 ## Eclipse
 #################
 
+
+.idea/
+nbproject/
+app/cache/*
+
 *.pydevproject
 .project
 .metadata

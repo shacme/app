@@ -23,23 +23,60 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">
         <title>App</title>
-        <link rel=\"stylesheet\" type=\"text/css\" href=\"http://www.demo.local/qa-theme/dude/qa-styles.css?1.6.2\">
-        <script src=\"http://www.demo.local/qa-content/jquery-1.7.2.min.js\" type=\"text/javascript\"></script>
-        <script src=\"http://www.demo.local/qa-content/qa-page.js?1.6.2\" type=\"text/javascript\"></script>
-        <link rel=\"stylesheet\" type=\"text/css\" href=\"http://www.demo.local/qa-plugin/ra-social/style.css\">
-        <script src=\"http://www.demo.local/qa-plugin/ra-social/script.js\"></script>
-        <link href=\"http://www.demo.local/qa-theme/dude/css/bootstrap.css\" type=\"text/css\" rel=\"stylesheet\">
-        <link href=\"http://www.demo.local/qa-theme/dude/css/dude.css\" type=\"text/css\" rel=\"stylesheet\">
+
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/css/qa-styles.css?1.6.2"), "html", null, true);
+        echo "\">
+        <script src=\"";
+        // line 9
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/jquery-1.7.2.min.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+        <script src=\"";
+        // line 10
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/qa-page.js?1.6.2"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 11
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/plugins/ra-social/style.css"), "html", null, true);
+        echo "\">
+        <script src=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/plugins/ra-social/script.js"), "html", null, true);
+        echo "\"></script>
+        <link href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/css/bootstrap.css"), "html", null, true);
+        echo "\" type=\"text/css\" rel=\"stylesheet\">
+        <link href=\"";
+        // line 14
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/css/dude.css"), "html", null, true);
+        echo "\" type=\"text/css\" rel=\"stylesheet\">
         <meta name=\"generator\" content=\"rahularyan\">
         <style></style>
-        <link rel=\"stylesheet\" type=\"text/css\" href=\"http://www.demo.local/qa-theme/dude/font/style.css\">
-        <link rel=\"stylesheet\" type=\"text/css\" href=\"http://www.demo.local/qa-theme/dude/css/dlmenu.css\">
-        <link rel=\"shortcut icon\" href=\"http://www.demo.local/qa-theme/dude/images/ico/favicon.png\">
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 17
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/font/style.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 18
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/css/dlmenu.css"), "html", null, true);
+        echo "\">
+        <link rel=\"shortcut icon\" href=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/images/ico/favicon.png"), "html", null, true);
+        echo "\">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
-          <script src=\"http://www.demo.local/qa-theme/dude/js/respond.min.js\"></script>
+          <script src=\"";
+        // line 22
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/respond.min.js"), "html", null, true);
+        echo "\"></script>
         <![endif]-->
-        <script src=\"http://www.demo.local/qa-theme/dude/js/modernizr.custom.js\"></script>
+        <script src=\"";
+        // line 24
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/modernizr.custom.js"), "html", null, true);
+        echo "\"></script>
     </head>\t
     <body class=\"qa-template-qa qa-body-js-on\">
         <div class=\"navbar navbar-default navbar-fixed-top\">
@@ -142,7 +179,7 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                         </ul>
                     </div>
                     <a href=\"";
-        // line 125
+        // line 126
         echo $this->env->getExtension('routing')->getPath("acme_default_homepage");
         echo "\" class=\"logo image\" title=\"Dude\">
                         <img src=\"http://www.demo.local/qa-theme/dude/images/logo.png\">
@@ -150,14 +187,14 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                 </div>
                 <ul class=\"nav-userbox nav pull-right\">
                     ";
-        // line 130
+        // line 131
         if ($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user")) {
-            // line 131
+            // line 132
             echo "                        <li id=\"user-nag\">
                             <a class=\"profile\" href=\"\">
                                 <img src=\"http://www.demo.local/?qa=image&qa_blobid=1565640033579949442&qa_size=20\" />
                                 <span>";
-            // line 134
+            // line 135
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user"), "username"), "html", null, true);
             echo "</span>
                                 <span class=\"points\">100</span>
@@ -170,16 +207,16 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                             <div class=\"dropdown-menu\">\t\t\t\t
                                 <ul class=\"user-nav\">
                                     <li><a class=\"icon-profile\" href=\"";
-            // line 144
+            // line 145
             echo $this->env->getExtension('routing')->getPath("user_index", array("user_name" => "shyinyong"));
             echo "\">我的主页</a></li>
                                     <li><a class=\"icon-user-2\"  href=\"";
-            // line 145
+            // line 146
             echo $this->env->getExtension('routing')->getUrl("account_index");
             echo "\" title=\"My Account\">我的帐户</a></li>
                                     <li><a class=\"icon-bullhorn\"  href=\"./index.php/updates\" title=\"My Updates\">我的更新</a></li>
                                     <li><a class=\"icon-switch\"  href=\"";
-            // line 147
+            // line 148
             echo $this->env->getExtension('routing')->getUrl("fos_user_security_logout");
             echo "\" title=\"Logout\">退出</a></li>
                                 </ul>
@@ -187,19 +224,19 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                         </li>
                     ";
         } else {
-            // line 152
+            // line 153
             echo "                        <li class=\"dropdown\" id=\"menuLogin\">
                             <a class=\"user-buttons\" href=\"";
-            // line 153
+            // line 154
             echo $this->env->getExtension('routing')->getPath("fos_user_registration_register");
             echo "\" title=\"Register\">免费注册</a>
                             <a class=\"dropdown-toggle user-buttons\" href=\"";
-            // line 154
+            // line 155
             echo $this->env->getExtension('routing')->getPath("fos_user_security_login");
             echo "\" data-toggle=\"\" id=\"navLogin\">登录</a>
                             <div class=\"dropdown-menu login-form\">
                                 <form id=\"loginform\" action=\"";
-            // line 156
+            // line 157
             echo $this->env->getExtension('routing')->getPath("fos_user_security_check");
             echo "\" method=\"post\">
                                     <input type=\"text\" id=\"qa-userid\" name=\"_username\" placeholder=\"Email or Username\">
@@ -214,7 +251,7 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                         </li>
                     ";
         }
-        // line 168
+        // line 169
         echo "                </ul>
                 <a class=\"ask-btn btn btn-danger btn-sm\" href=\"./index.php/ask\">
                     发表我的问题
@@ -222,42 +259,42 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                 <ul class=\"main-menu nav navbar-nav\">
                     <li class=\"active\">
                         <a href=\"";
-        // line 174
+        // line 175
         echo $this->env->getExtension('routing')->getPath("acme_default_homepage");
         echo "\" title=\"Dude\" class=\"home-anchor icon-home\">
                         </a>
                     </li>
                     <li class=\"dropdown\">
                         <a class=\" dropdown-toggle\" data-toggle=\"dropdown\" href=\"";
-        // line 178
+        // line 179
         echo $this->env->getExtension('routing')->getPath("questions_index");
         echo "\">问题</a>
                         <ul class=\"dropdown-menu\">
                             <li class=\"\"><a  href=\"";
-        // line 180
+        // line 181
         echo $this->env->getExtension('routing')->getPath("questions_index", array("sort" => "recent"));
         echo "\">最新</a></li>
                             <li class=\"\"><a  href=\"";
-        // line 181
+        // line 182
         echo $this->env->getExtension('routing')->getPath("questions_index", array("sort" => "host"));
         echo "\">Hot!</a></li>
                             <li class=\"\"><a  href=\"";
-        // line 182
+        // line 183
         echo $this->env->getExtension('routing')->getPath("questions_index", array("sort" => "votes"));
         echo "\">最多投票</a></li>
                             <li class=\"\"><a  href=\"";
-        // line 183
+        // line 184
         echo $this->env->getExtension('routing')->getPath("questions_index", array("sort" => "answers"));
         echo "\">最多回答</a></li>
                             <li class=\"\"><a  href=\"";
-        // line 184
+        // line 185
         echo $this->env->getExtension('routing')->getPath("questions_index", array("sort" => "views"));
         echo "\">最多查看</a></li>
                         </ul>
                     </li>
                     <li class=\"\">
                         <a class=\"\" href=\"";
-        // line 188
+        // line 189
         echo $this->env->getExtension('routing')->getPath("questions_index", array("sort" => "host"));
         echo "\">Hot!</a>
                     </li>
@@ -270,19 +307,19 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                         </ul>
                     </li>
                     <li class=\"\"><a class=\"\" href=\"";
-        // line 198
+        // line 199
         echo $this->env->getExtension('routing')->getPath("tags_index");
         echo "\"></i>标签</a></li>
                     <li class=\"\"><a class=\"\" href=\"";
-        // line 199
+        // line 200
         echo $this->env->getExtension('routing')->getPath("categories_index");
         echo "\"></i>分类</a></li>
                     <li class=\"\"><a class=\"\" href=\"";
-        // line 200
+        // line 201
         echo $this->env->getExtension('routing')->getPath("users_index");
         echo "\"></i>用户</a></li>
                     <li class=\"\"><a class=\"\" href=\"";
-        // line 201
+        // line 202
         echo $this->env->getExtension('routing')->getPath("acme_default_badges");
         echo "\"></i>徽章</a></li>
                 </ul>
@@ -290,9 +327,9 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
         </div>
       
         ";
-        // line 206
+        // line 207
         $this->displayBlock('main', $context, $blocks);
-        // line 209
+        // line 210
         echo "
 
         <div id=\"bottom\">
@@ -307,7 +344,7 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                                             <div class=\"item-content ra-editable\">
                                                 <div class=\"about-us\">
                                                     <a href=\"";
-        // line 222
+        // line 223
         echo $this->env->getExtension('routing')->getPath("acme_default_homepage");
         echo "\" class=\"logo image\" title=\"Dude\">
                                                         <img src=\"http://www.demo.local/qa-theme/dude/images/logo.png\">
@@ -509,21 +546,35 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
                 </div>
             </div>
         </footer>
-        <script src=\"http://www.demo.local/qa-theme/dude/js/jquery-ui.js\"></script>
-        <script src=\"http://www.demo.local/qa-theme/dude/js/bootstrap.js\"></script>\t\t\t\t
-        <script src=\"http://www.demo.local/qa-theme/dude/js/jquery.dlmenu.js\"></script>\t\t
-        <script src=\"http://www.demo.local/qa-theme/dude/js/socialite.min.js\"></script>\t\t
-
-        <script src=\"http://www.demo.local/qa-theme/dude/js/dude.js\"></script>
+        <script src=\"";
+        // line 423
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/jquery-ui.js"), "html", null, true);
+        echo "\"></script>
+        <script src=\"";
+        // line 424
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/bootstrap.js"), "html", null, true);
+        echo "\"></script>
+        <script src=\"";
+        // line 425
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/jquery.dlmenu.js"), "html", null, true);
+        echo "\"></script>
+        <script src=\"";
+        // line 426
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/socialite.min.js"), "html", null, true);
+        echo "\"></script>
+        <script src=\"";
+        // line 427
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmedefault/js/dude.js"), "html", null, true);
+        echo "\"></script>
     </body>
 </html>
 ";
     }
 
-    // line 206
+    // line 207
     public function block_main($context, array $blocks = array())
     {
-        // line 207
+        // line 208
         echo "
         ";
     }
@@ -540,6 +591,6 @@ class __TwigTemplate_d4a86a621d46b50817ad0ec42c2c4b221165733bc61d0cd98b22f01850b
 
     public function getDebugInfo()
     {
-        return array (  527 => 207,  524 => 206,  311 => 222,  296 => 209,  294 => 206,  286 => 201,  282 => 200,  278 => 199,  274 => 198,  261 => 188,  254 => 184,  250 => 183,  246 => 182,  242 => 181,  238 => 180,  233 => 178,  226 => 174,  218 => 168,  203 => 156,  198 => 154,  194 => 153,  191 => 152,  183 => 147,  178 => 145,  174 => 144,  161 => 134,  156 => 131,  154 => 130,  146 => 125,  20 => 1,  47 => 10,  44 => 9,  39 => 6,  36 => 5,  30 => 3,);
+        return array (  578 => 208,  575 => 207,  567 => 427,  563 => 426,  559 => 425,  555 => 424,  551 => 423,  348 => 223,  333 => 210,  331 => 207,  323 => 202,  319 => 201,  315 => 200,  311 => 199,  298 => 189,  291 => 185,  287 => 184,  283 => 183,  279 => 182,  275 => 181,  270 => 179,  263 => 175,  255 => 169,  240 => 157,  235 => 155,  231 => 154,  228 => 153,  220 => 148,  215 => 146,  211 => 145,  198 => 135,  193 => 132,  191 => 131,  183 => 126,  78 => 24,  73 => 22,  67 => 19,  63 => 18,  59 => 17,  53 => 14,  49 => 13,  45 => 12,  41 => 11,  37 => 10,  33 => 9,  29 => 8,  20 => 1,);
     }
 }
