@@ -1,0 +1,12 @@
+[submodule "vendor/doctrine/mongodb-odm"]
+	path = vendor/doctrine/mongodb-odm
+	url = git://github.com/doctrine/mongodb-odm.git
+[submodule "vendor/doctrine/mongodb-odm-bundle/Doctrine/Bundle/MongoDBBundle"]
+	path = vendor/doctrine/mongodb-odm-bundle/Doctrine/Bundle/MongoDBBundle
+	url = git://github.com/doctrine/DoctrineMongoDBBundle.git
+[submodule "vendor/friendsofsymfony/user-bundle/FOS/UserBundle"]
+	path = vendor/friendsofsymfony/user-bundle/FOS/UserBundle
+	url = git://github.com/FriendsOfSymfony/FOSUserBundle.git
+[submodule "vendor/knplabs/knp-paginator-bundle/Knp/Bundle/PaginatorBundle"]
+	path = vendor/knplabs/knp-paginator-bundle/Knp/Bundle/PaginatorBundle
+	url = git://github.com/KnpLabs/KnpPaginatorBundle.git

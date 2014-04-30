@@ -1,0 +1,4 @@
+#用户主页
+user_index:
+    pattern:  /{user_name}
+    defaults: { _controller: "AcmeDefaultBundle:User:index", user_name: null }

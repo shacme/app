@@ -1,0 +1,39 @@
+acme_default_homepage:
+    pattern:  /
+    host: "www.app.local"
+    defaults: { _controller: AcmeDefaultBundle:Default:index }
+
+acme_default_badges:
+    pattern:  /badges
+    host: "www.app.local"
+    defaults: { _controller: AcmeDefaultBundle:Badges:index }
+
+#类别
+AcmeDefaultBundle_categores:
+    resource: "routing/categories.yml"
+    prefix:  /categories
+
+#标签
+AcmeDefaultBundle_tags:
+    resource: "routing/tags.yml"
+    prefix:  /tags
+    
+#问题
+AcmeDefaultBundle_questions:
+    resource: "routing/questions.yml"
+    prefix:  /questions
+    
+#用户列表
+AcmeDefaultBundle_users:
+    resource: "routing/users.yml"
+    prefix:  /users
+
+#用户主页
+AcmeDefaultBundle_user:
+    resource: "routing/user.yml"
+    prefix:  /user
+    
+#帐户中心
+AcmeDefaultBundle_account:
+    resource: "routing/account.yml"
+    prefix:  /account

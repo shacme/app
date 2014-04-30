@@ -1,0 +1,4 @@
+#标签
+tags_index:
+    pattern:  /
+    defaults: { _controller: "AcmeDefaultBundle:Tags:index" }

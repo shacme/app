@@ -1,0 +1,483 @@
+{# src/Acme/DefaultBundle/Resources/views/Default/index.html.twig #}
+{% extends 'AcmeDefaultBundle::layout.html.twig' %}
+{% block title %}首页{% endblock %}
+
+{% block js_css %}
+
+{% endblock %} 
+
+{% block main %}
+    <section id="main" class="has-fixed-top">
+
+
+
+
+
+        <header id="mastheader">
+            <div class="page-header">
+                <div class="container">
+                    <div class="page-title pull-left">
+                        <h1>		Top scoring users
+                        </h1>
+                    </div>
+
+
+                    <form method="get" action="./?qa=search" class="form-inline search-form pull-right">
+                        <input type="hidden" name="qa" value="search">	<div class="form-group">
+                            <input type="text" name="q" value="" class="form-control navbar-search" placeholder="Search for questions">
+                        </div>
+                        <button type="submit" class="icon-magnifier btn btn-primary" title="Search"></button>			
+                    </form>
+
+                    <div class="ra-social-output clearfix">
+                        <ul class="inline only-icon">
+                            <li><a target="_blank" href="http://facebook.com/nerdaryan"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/facebook_24.png"><span>facebook</span></a></li>
+                            <li><a target="_blank" href="https://twitter.com/nerdaryan"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/twitter_24.png"><span>twitter</span></a></li>
+                            <li><a target="_blank" href="https://plus.google.com/102280288713981086298"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/google-plus_24.png"><span>PlusOne</span></a></li>
+                        </ul>
+                    </div>
+                </div>	
+            </div>
+        </header>
+
+
+        <script type="text/javascript">
+            var b = document.getElementsByTagName('body')[0];
+            b.className = b.className.replace('qa-body-js-off', 'qa-body-js-on');
+        </script>
+        <div id="index">
+            <div class="contents ">
+                <div id="users" class="main-parts">
+                    <div id="builder_users" data-name="users" class="dynamic-layout "><div class="ra-row parent ui-draggable">  <div class="item-content"> <div class="ra-container"><div class="container"><div class="row"><div class="col-md-8 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Q2A Users" class="item-content widget-c">				<div class="page-users-list non-table">
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover" style="background:url(http://www.demo.local/images/eac45bff35eb06cc3312a592a4ab43c9_s.jpg) no-repeat scroll 0 0 / cover;"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/admin">Rahul Aryan</a>
+                                                                                <span class="points">Points<span>1260</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="13 Bronze"></i><span class="badge-pointer badge-bronze-count" title="13 Bronze"> 13</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/mr_incredible"><img src="./?qa=image&amp;qa_blobid=1565640033579949442&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/mr_incredible">mr_incredible</a>
+                                                                                <span class="points">Points<span>950</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="4 Bronze"></i><span class="badge-pointer badge-bronze-count" title="4 Bronze"> 4</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/buzz"><img src="./?qa=image&amp;qa_blobid=11576600850225663528&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/buzz">buzz</a>
+                                                                                <span class="points">Points<span>710</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="5 Bronze"></i><span class="badge-pointer badge-bronze-count" title="5 Bronze"> 5</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/juggornot"><img src="./?qa=image&amp;qa_blobid=3360453308508702985&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/juggornot">juggornot</a>
+                                                                                <span class="points">Points<span>700</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="6 Bronze"></i><span class="badge-pointer badge-bronze-count" title="6 Bronze"> 6</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/john"><img src="./?qa=image&amp;qa_blobid=16230449406133762946&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/john">john</a>
+                                                                                <span class="points">Points<span>670</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="6 Bronze"></i><span class="badge-pointer badge-bronze-count" title="6 Bronze"> 6</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/dento"><img src="./?qa=image&amp;qa_blobid=15490480121855037789&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/dento">dento</a>
+                                                                                <span class="points">Points<span>580</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="5 Bronze"></i><span class="badge-pointer badge-bronze-count" title="5 Bronze"> 5</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/selena"><img src="./?qa=image&amp;qa_blobid=1855948176351576045&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/selena">selena</a>
+                                                                                <span class="points">Points<span>550</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="4 Bronze"></i><span class="badge-pointer badge-bronze-count" title="4 Bronze"> 4</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/old_man"><img src="./?qa=image&amp;qa_blobid=17178655572799797940&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/old_man">old_man</a>
+                                                                                <span class="points">Points<span>520</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="4 Bronze"></i><span class="badge-pointer badge-bronze-count" title="4 Bronze"> 4</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/one_eyed"><img src="./?qa=image&amp;qa_blobid=13393310319980628081&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/one_eyed">one_eyed</a>
+                                                                                <span class="points">Points<span>440</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="6 Bronze"></i><span class="badge-pointer badge-bronze-count" title="6 Bronze"> 6</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/wall_e"><img src="./?qa=image&amp;qa_blobid=16626734729548631403&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/wall_e">wall_e</a>
+                                                                                <span class="points">Points<span>390</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="5 Bronze"></i><span class="badge-pointer badge-bronze-count" title="5 Bronze"> 5</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/princess"><img src="./?qa=image&amp;qa_blobid=15886826190290698119&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/princess">princess</a>
+                                                                                <span class="points">Points<span>380</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="5 Bronze"></i><span class="badge-pointer badge-bronze-count" title="5 Bronze"> 5</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/marilyn"><img src="./?qa=image&amp;qa_blobid=4367582346415636205&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/marilyn">marilyn</a>
+                                                                                <span class="points">Points<span>340</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="5 Bronze"></i><span class="badge-pointer badge-bronze-count" title="5 Bronze"> 5</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/russell"><img src="./?qa=image&amp;qa_blobid=11324748187731566428&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/russell">russell</a>
+                                                                                <span class="points">Points<span>310</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="4 Bronze"></i><span class="badge-pointer badge-bronze-count" title="4 Bronze"> 4</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/muboy"><img src="./?qa=image&amp;qa_blobid=14335595209487717967&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/muboy">muboy</a>
+                                                                                <span class="points">Points<span>310</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="4 Bronze"></i><span class="badge-pointer badge-bronze-count" title="4 Bronze"> 4</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/Fynn"><img src="./?qa=image&amp;qa_blobid=10776886501010250333&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/Fynn">Fynn</a>
+                                                                                <span class="points">Points<span>300</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="3 Bronze"></i><span class="badge-pointer badge-bronze-count" title="3 Bronze"> 3</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/boy"><img src="./?qa=image&amp;qa_blobid=16940215807505183659&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/boy">boy</a>
+                                                                                <span class="points">Points<span>270</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="3 Bronze"></i><span class="badge-pointer badge-bronze-count" title="3 Bronze"> 3</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/miranda"><img src="./?qa=image&amp;qa_blobid=13606915021701521957&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/miranda">miranda</a>
+                                                                                <span class="points">Points<span>170</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="3 Bronze"></i><span class="badge-pointer badge-bronze-count" title="3 Bronze"> 3</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/monu"><img src="./?qa=image&amp;qa_blobid=1564937841064345096&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/monu">monu</a>
+                                                                                <span class="points">Points<span>160</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal silver"><i class="icon-badge" title="1 Silver"></i><span class="badge-pointer badge-silver-count" title="1 Silver"> 1</span></li><li class="badge-medal bronze"><i class="icon-badge" title="3 Bronze"></i><span class="badge-pointer badge-bronze-count" title="3 Bronze"> 3</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/test"><img src="./?qa=image&amp;qa_blobid=2151350950843633819&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/test">test</a>
+                                                                                <span class="points">Points<span>100</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="2 Bronze"></i><span class="badge-pointer badge-bronze-count" title="2 Bronze"> 2</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                    <div class="user-list-item clearfix">
+                                                                        <div class="user-head clearfix">
+                                                                            <div class="user-cover"></div>
+                                                                            <div class="over-cover">									
+                                                                                <div class="favourite"><i title="In your favourite list" class=""></i></div>
+                                                                                <a href="./?qa=user/shyinyong"><img src="./?qa=image&amp;qa_blobid=34613087031464436&amp;qa_size=80"></a>										
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="user-detail">	
+                                                                            <div class="name-points">
+                                                                                <a class="name" href="./?qa=user/shyinyong">shyinyong</a>
+                                                                                <span class="points">Points<span>100</span></span>										
+                                                                            </div>
+                                                                            <div class="badge-list"><ul class="user-badge clearfix"><li class="badge-medal bronze"><i class="icon-badge" title="1 Bronze"></i><span class="badge-pointer badge-bronze-count" title="1 Bronze"> 1</span></li></ul></div>																
+
+                                                                        </div></div>
+                                                                </div>
+                                                            </div></div>
+                                                        <ul class="pagination">
+                                                            <li class="qa-page-links-item">
+                                                                <span class="qa-page-selected">1</span>
+                                                            </li>
+                                                            <li class="qa-page-links-item">
+                                                                <a href="./?qa=users&amp;start=20" class="qa-page-link">2</a>
+                                                            </li>
+                                                            <li class="qa-page-links-item">
+                                                                <a href="./?qa=users&amp;start=20" class="qa-page-next">next »</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div> </div></div><div class="col-md-4 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Ra Events" data-limit="5" class="item-content widget-c">		<div class="widget events clearfix">
+                                                            <h3 class="widget-title">Recent Activities</h3>
+                                                            <ul class="ra-events"><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="test" data-id="22"><a href="./?qa=user/test"><img src="./?qa=image&amp;qa_blobid=2151350950843633819&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/test">test</a> earned a badge <span class="time">1 hour ago</span></h4><h5 class="event-title">Photogenic - Uploaded an avatar image</h5></div></div></li><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="test" data-id="22"><a href="./?qa=user/test"><img src="./?qa=image&amp;qa_blobid=2151350950843633819&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/test">test</a> earned a badge <span class="time">1 hour ago</span></h4><h5 class="event-title">100 Club - Received total of 100 points</h5></div></div></li><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="shyinyong" data-id="21"><a href="./?qa=user/shyinyong"><img src="./?qa=image&amp;qa_blobid=34613087031464436&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/shyinyong">shyinyong</a> earned a badge <span class="time">2 days ago</span></h4><h5 class="event-title">100 Club - Received total of 100 points</h5></div></div></li><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/admin">Rahul Aryan</a> earned a badge <span class="time">Dec 29, 2013</span></h4><h5 class="event-title">Visitor - Visited site on total of 30 days</h5></div></div></li><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/admin">Rahul Aryan</a> earned a badge <span class="time">Dec 5, 2013</span></h4><h5 class="event-title">Dedicated - Visited every day for 10 consecutive d…</h5></div></div></li></ul>		</div>
+                                                    </div> </div><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Ra Comments List" data-limit="5" class="item-content widget-c">		<div class="widget w-question-list">
+                                                            <h3 class="widget-title">Latest Comments</h3>
+                                                            <ul class="question-list"><li id="q-list-78" class="question-item"><div class="pull-left avatar" data-handle="" data-id=""><a href="./?qa=user/"><img src="./?qa=image&amp;qa_blobid=34613087031464436&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/"></a> commented</h5><p><a href="./?qa=16/aenean-nec-porta-suspendisse-scelerisque-lectus#c78">This ai anonymous comments testings</a></p></div></li><li id="q-list-77" class="question-item"><div class="pull-left avatar" data-handle="john" data-id="2"><a href="./?qa=user/john"><img src="./?qa=image&amp;qa_blobid=16230449406133762946&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/john">john</a> commented</h5><p><a href="./?qa=16/aenean-nec-porta-suspendisse-scelerisque-lectus#c77">Morbi sed elit sit amet lacus euismod varius.</a></p></div></li><li id="q-list-76" class="question-item"><div class="pull-left avatar" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/admin">Rahul Aryan</a> commented</h5><p><a href="./?qa=16/aenean-nec-porta-suspendisse-scelerisque-lectus#c76">Integer ornare sem quis magna sagittis fringilla.f</a></p></div></li><li id="q-list-75" class="question-item"><div class="pull-left avatar" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/admin">Rahul Aryan</a> commented</h5><p><a href="./?qa=16/aenean-nec-porta-suspendisse-scelerisque-lectus#c75">At lacus nec leo fringilla placerat. Fusce placera</a></p></div></li><li id="q-list-74" class="question-item"><div class="pull-left avatar" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/admin">Rahul Aryan</a> commented</h5><p><a href="./?qa=16/aenean-nec-porta-suspendisse-scelerisque-lectus#c74">Integer ornare sem quis magna sagittis fringilla. </a></p></div></li></ul>		</div>
+                                                    </div> </div></div></div></div></div> </div> </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div style="position:absolute; left:-9999px; top:-9999px;">
+            <span id="qa-waiting-template" class="qa-waiting">...</span>
+        </div>
+    </section>
+{% endblock %}

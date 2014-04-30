@@ -1,0 +1,74 @@
+{# src/Acme/DefaultBundle/Resources/views/Default/index.html.twig #}
+{% extends 'AcmeDefaultBundle::layout.html.twig' %}
+{% block title %}欢迎您注册会员 {% endblock %}
+
+{% block js_css %}
+
+{% endblock %} 
+{% block main %}
+    <header id="mastheader">
+        <div class="page-header">
+            <div class="container">
+                <div class="page-title pull-left">
+                    <h1>注册新用户</h1>
+                </div>
+                <form method="get" action="../index.php/search" class="form-inline search-form pull-right">
+                    <div class="form-group">
+                        <input type="text" name="q" value="" class="form-control navbar-search" placeholder="Search for questions">
+                    </div>
+                    <button type="submit" class="icon-magnifier btn btn-primary" title="Search"></button>			
+                </form>
+                <div class="ra-social-output clearfix">
+                    <ul class="inline only-icon">
+                        <li><a target="_blank" href="http://facebook.com/nerdaryan"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/facebook_24.png"><span>facebook</span></a></li>
+                        <li><a target="_blank" href="https://twitter.com/nerdaryan"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/twitter_24.png"><span>twitter</span></a></li>
+                        <li><a target="_blank" href="https://plus.google.com/102280288713981086298"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/google-plus_24.png"><span>PlusOne</span></a></li>
+                    </ul>
+                </div>
+            </div>	
+        </div>
+    </header>
+    <script type="text/javascript">
+        var b = document.getElementsByTagName('body')[0];
+        b.className = b.className.replace('qa-body-js-off', 'qa-body-js-on');
+    </script>
+    <div id="index">
+        <div class="contents ">
+            <div id="register">
+
+                <div class="container">
+                    <form class="form-horizontal" method="post" action="../index.php/register?to=">
+                        <div class="qa-form-tall">
+                            <div class="form-group handle clearfix">
+                                <div class="col-lg-10">
+                                    <input name="handle" id="handle" type="text" value="" class="qa-form-tall-text" placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="form-group password clearfix">
+                                <div class="col-lg-10">
+                                    <input name="password" id="password" type="password" value="" class="qa-form-tall-text" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group email clearfix">
+                                <div class="col-lg-10">
+                                    <input name="email" id="email" type="text" value="" class="qa-form-tall-text" placeholder="Email">
+                                    <span class="help-inline">
+                                        <div class="qa-form-tall-note">隐私： 您的电子邮件地址不会共享或出售给第三方。</div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <input onclick="qa_show_waiting_after(this, false);" value="免费注册" title="" type="submit" class="btn btn-default btn-register">
+                            </div>
+                        </div>
+                        <input type="hidden" name="doregister" value="1">
+                        <input type="hidden" name="code" value="0-1398759985-956bdfe92d73881d98b145897cadf205e2b318ea">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position:absolute; left:-9999px; top:-9999px;">
+        <span id="qa-waiting-template" class="qa-waiting">...</span>
+    </div>
+{% endblock %}

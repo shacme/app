@@ -1,0 +1,138 @@
+{# src/Acme/DefaultBundle/Resources/views/Default/index.html.twig #}
+{% extends 'AcmeDefaultBundle::layout.html.twig' %}
+{% block title %}类别{% endblock %}
+
+{% block js_css %}
+
+{% endblock %} 
+
+{% block main %}
+    <section id="main" class="has-fixed-top">
+
+
+
+
+
+        <header id="mastheader">
+            <div class="page-header">
+                <div class="container">
+                    <div class="page-title pull-left">
+                        <h1>		Most popular tags
+                        </h1>
+                    </div>
+
+
+                    <form method="get" action="./?qa=search" class="form-inline search-form pull-right">
+                        <input type="hidden" name="qa" value="search">	<div class="form-group">
+                            <input type="text" name="q" value="" class="form-control navbar-search" placeholder="Search for questions">
+                        </div>
+                        <button type="submit" class="icon-magnifier btn btn-primary" title="Search"></button>			
+                    </form>
+
+                    <div class="ra-social-output clearfix">
+                        <ul class="inline only-icon">
+                            <li><a target="_blank" href="http://facebook.com/nerdaryan"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/facebook_24.png"><span>facebook</span></a></li>
+                            <li><a target="_blank" href="https://twitter.com/nerdaryan"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/twitter_24.png"><span>twitter</span></a></li>
+                            <li><a target="_blank" href="https://plus.google.com/102280288713981086298"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/google-plus_24.png"><span>PlusOne</span></a></li>
+                        </ul>
+                    </div>
+                </div>	
+            </div>
+        </header>
+
+
+        <script type="text/javascript">
+            var b = document.getElementsByTagName('body')[0];
+            b.className = b.className.replace('qa-body-js-off', 'qa-body-js-on');
+        </script>
+        <div id="index">
+            <div class="contents ">
+                <div id="tags" class="main-parts">
+                    <div id="builder_tags" data-name="tags" class="dynamic-layout "><div class="ra-row parent ui-draggable">  <div class="item-content"> <div class="ra-container"><div class="container"><div class="row"><div class="col-md-8 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Q2A Tags" class="item-content widget-c">				<div class="row page-tags-list clearfix">
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item"><a href="./?qa=tag/ipsum" class="qa-tag-link">ipsum</a><span>4</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/lorem" class="qa-tag-link">lorem</a><span>4</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/pellentesque" class="qa-tag-link">pellentesque</a><span>3</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/sed" class="qa-tag-link">sed</a><span>3</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/tempor" class="qa-tag-link">tempor</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/curabitur" class="qa-tag-link">curabitur</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/vitae" class="qa-tag-link">vitae</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/molestie" class="qa-tag-link">molestie</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/lacinia" class="qa-tag-link">lacinia</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/nunc" class="qa-tag-link">nunc</a><span>2</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item"><a href="./?qa=tag/viverra" class="qa-tag-link">viverra</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/dolor" class="qa-tag-link">dolor</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/porta" class="qa-tag-link">porta</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/praesent" class="qa-tag-link">praesent</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/adipiscing" class="qa-tag-link">adipiscing</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/condimentum" class="qa-tag-link">condimentum</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/mauris" class="qa-tag-link">mauris</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/accumsan" class="qa-tag-link">accumsan</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/aenean" class="qa-tag-link">aenean</a><span>2</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/test" class="qa-tag-link">test</a><span>1</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item"><a href="./?qa=tag/fringilla" class="qa-tag-link">fringilla</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/auctor" class="qa-tag-link">auctor</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/nibh" class="qa-tag-link">nibh</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/interdum" class="qa-tag-link">interdum</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/laoreet" class="qa-tag-link">laoreet</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/iaculis" class="qa-tag-link">iaculis</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/dignissim" class="qa-tag-link">dignissim</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/dapibus" class="qa-tag-link">dapibus</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/vel" class="qa-tag-link">vel</a><span>1</span></li>
+                                                                    <li class="list-group-item"><a href="./?qa=tag/penatibus" class="qa-tag-link">penatibus</a><span>1</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pagination">
+                                                            <li class="qa-page-links-item">
+                                                                <span class="qa-page-selected">1</span>
+                                                            </li>
+                                                            <li class="qa-page-links-item">
+                                                                <a href="./?qa=tags&amp;start=30" class="qa-page-link">2</a>
+                                                            </li>
+                                                            <li class="qa-page-links-item">
+                                                                <a href="./?qa=tags&amp;start=60" class="qa-page-link">3</a>
+                                                            </li>
+                                                            <li class="qa-page-links-item">
+                                                                <a href="./?qa=tags&amp;start=30" class="qa-page-next">next »</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div> </div><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Q2A Pagination" class="item-content widget-c"></div> </div><div class="item parent ui-draggable">  <div class="item-content ra-editable"><hr class="seprator"></div> </div><div class="ra-row parent ui-draggable">  <div class="item-content"> <div class="ra-container"><div class="row"><div class="col-md-4 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Ra Tags List" data-limit="8" class="item-content widget-c">		<div class="widget top-users block clearfix">
+                                                                                <h3 class="widget-title have-link"><a class="all-user-list btn pull-right icon-reorder" href="./?qa=tags"></a> Tags</h3>
+                                                                                <ul class="tag-list">
+                                                                                    <li><a class="icon-tag" href="./?qa=tag/ipsum">ipsum<span>4</span></a></li><li><a class="icon-tag" href="./?qa=tag/lorem">lorem<span>4</span></a></li><li><a class="icon-tag" href="./?qa=tag/pellentesque">pellentesque<span>3</span></a></li><li><a class="icon-tag" href="./?qa=tag/sed">sed<span>3</span></a></li><li><a class="icon-tag" href="./?qa=tag/tempor">tempor<span>2</span></a></li><li><a class="icon-tag" href="./?qa=tag/curabitur">curabitur<span>2</span></a></li><li><a class="icon-tag" href="./?qa=tag/vitae">vitae<span>2</span></a></li><li><a class="icon-tag" href="./?qa=tag/molestie">molestie<span>2</span></a></li>			</ul>
+                                                                            </div>
+                                                                        </div> </div></div><div class="col-md-4 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Ra Categories List" data-limit="8" class="item-content widget-c">		<div class="cat-list widget top-users block clearfix">
+                                                                                <h3 class="widget-title have-link"><a class="all-user-list btn pull-right icon-reorder" href="./?qa=categories"></a> Categories</h3>
+                                                                                <ul class="ra-cat-list clearfix"><li><a class="icon-folder-close" title="Maecenas at erat lectus. Maecenas a lorem id justo vestibulum pellentesque. Aliquam sollicitudin lorem eget varius rhoncus." href="./?qa=themes">Themes<span>22</span></a></li><li><a class="icon-folder-close" title="Nulla suscipit nunc ut diam adipiscing, et iaculis tellus dapibus. Integer porttitor risus quis dui eleifend, sit amet" href="./?qa=plugins">Plugins<span>0</span></a></li><li><a class="icon-folder-close" title="Yuis eu nibh tincidunt, porttitor eros at, consequat diam. Sed in rutrum arcu. Morbi gravida, erat quis pellentesque iaculit" href="./?qa=joomla">Joomla<span>2</span></a></li><li><a class="icon-folder-close" title="Daecenas at erat lectus. Maecenas a lorem id justo vestibulum pellentesque. Aliquam sollicitudin lorem eget varius." href="./?qa=widgets">Widgets<span>0</span></a></li><li><a class="icon-folder-close" title="An opensource web browser by mozzila foundation" href="./?qa=firefox">Firefox<span>0</span></a></li><li><a class="icon-folder-close" title="Nulla sagittis purus eget erat aliquet condimentum. Maecenas placerat mollis nibh, a euismod urna rhoncus eget" href="./?qa=chrome">Chrome<span>0</span></a></li><li><a class="icon-folder-close" title="Sed congue risus sit amet augue euismod aliquam id et purus. Duis quis lectus magna" href="./?qa=gmail">Gmail<span>0</span></a></li><li><a class="icon-folder-close" title="Sed congue risus sit amet augue euismod aliquam id et purus. Duis quis lectus magna" href="./?qa=finance">Finance<span>1</span></a></li></ul>		</div>
+                                                                        </div> </div></div><div class="col-md-4 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Ra New Users" data-limit="12" class="item-content widget-c">		<div class="widget top-users block clearfix">
+                                                                                <h3 class="widget-title have-link"><a class="all-user-list btn pull-right" href="./?qa=users">All Users</a> New Users</h3>
+                                                                                <ul class="users-list clearfix"><li class="user"><div class="avatar" data-handle="test" data-id="22"><a href="./?qa=user/test"><img src="./?qa=image&amp;qa_blobid=2151350950843633819&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="shyinyong" data-id="21"><a href="./?qa=user/shyinyong"><img src="./?qa=image&amp;qa_blobid=34613087031464436&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="test.dot" data-id="20"><a href="./?qa=user/test.dot"><img src="./?qa=image&amp;qa_blobid=34613087031464436&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="rahul aryan" data-id="19"><a href="./?qa=user/rahul+aryan"><img src="./?qa=image&amp;qa_blobid=34613087031464436&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="russell" data-id="18"><a href="./?qa=user/russell"><img src="./?qa=image&amp;qa_blobid=11324748187731566428&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="buzz" data-id="17"><a href="./?qa=user/buzz"><img src="./?qa=image&amp;qa_blobid=11576600850225663528&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="wall_e" data-id="16"><a href="./?qa=user/wall_e"><img src="./?qa=image&amp;qa_blobid=16626734729548631403&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="mr_incredible" data-id="15"><a href="./?qa=user/mr_incredible"><img src="./?qa=image&amp;qa_blobid=1565640033579949442&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="princess" data-id="14"><a href="./?qa=user/princess"><img src="./?qa=image&amp;qa_blobid=15886826190290698119&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="old_man" data-id="13"><a href="./?qa=user/old_man"><img src="./?qa=image&amp;qa_blobid=17178655572799797940&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="juggornot" data-id="12"><a href="./?qa=user/juggornot"><img src="./?qa=image&amp;qa_blobid=3360453308508702985&amp;qa_size=50"></a></div></li><li class="user"><div class="avatar" data-handle="one_eyed" data-id="11"><a href="./?qa=user/one_eyed"><img src="./?qa=image&amp;qa_blobid=13393310319980628081&amp;qa_size=50"></a></div></li></ul>		</div>	
+                                                                        </div> </div></div></div></div> </div> </div></div><div class="col-md-4 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Ra Events" data-limit="5" class="item-content widget-c">		<div class="widget events clearfix">
+                                                            <h3 class="widget-title">Recent Activities</h3>
+                                                            <ul class="ra-events"><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="test" data-id="22"><a href="./?qa=user/test"><img src="./?qa=image&amp;qa_blobid=2151350950843633819&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/test">test</a> earned a badge <span class="time">56 minutes ago</span></h4><h5 class="event-title">Photogenic - Uploaded an avatar image</h5></div></div></li><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="test" data-id="22"><a href="./?qa=user/test"><img src="./?qa=image&amp;qa_blobid=2151350950843633819&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/test">test</a> earned a badge <span class="time">1 hour ago</span></h4><h5 class="event-title">100 Club - Received total of 100 points</h5></div></div></li><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="shyinyong" data-id="21"><a href="./?qa=user/shyinyong"><img src="./?qa=image&amp;qa_blobid=34613087031464436&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/shyinyong">shyinyong</a> earned a badge <span class="time">2 days ago</span></h4><h5 class="event-title">100 Club - Received total of 100 points</h5></div></div></li><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/admin">Rahul Aryan</a> earned a badge <span class="time">Dec 29, 2013</span></h4><h5 class="event-title">Visitor - Visited site on total of 30 days</h5></div></div></li><li class="event-item"><div class="event-icon pull-left icon-badge badge-icon bronze"></div><div class="event-inner"><div class="avatar pull-left" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="event-content"><h4><a target="_blank" class="qa-user-link" href="http://www.demo.local/user/admin">Rahul Aryan</a> earned a badge <span class="time">Dec 5, 2013</span></h4><h5 class="event-title">Dedicated - Visited every day for 10 consecutive d…</h5></div></div></li></ul>		</div>
+                                                    </div> </div><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Ra Questions List" data-limit="5" class="item-content widget-c">		<div class="widget w-question-list">
+                                                            <h3 class="widget-title">Latest Questions</h3>
+                                                            <ul class="question-list"><li id="q-list-81" class="question-item"><div class="pull-left avatar" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/admin">Rahul Aryan</a> asked</h5><p><a href="./?qa=81/proin-adipiscing-libero-ipsum-iaculis-ipsum-facilisis-quis" title="Proin adipiscing libero ipsum, vel iaculis ipsum facilisis quis">Proin adipiscing libero ipsum, vel iaculis ipsum facilisis quis</a></p><div class="counts"><div class="vote-count icon-chevron-up"><span>0</span></div><div class="ans-count icon-chat-4"><span>0</span></div></div></div></li><li id="q-list-63" class="question-item"><div class="pull-left avatar" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/admin">Rahul Aryan</a> asked</h5><p><a href="./?qa=63/morbi-ullamcorper-sapien-non-nunc-dapibus" title="Morbi ullamcorper sapien non nunc dapibus">Morbi ullamcorper sapien non nunc dapibus</a></p><div class="counts"><div class="vote-count icon-chevron-up"><span>0</span></div><div class="ans-count icon-chat-4"><span>1</span></div></div></div></li><li id="q-list-62" class="question-item"><div class="pull-left avatar" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/admin">Rahul Aryan</a> asked</h5><p><a href="./?qa=62/quisque-viverra-velit-tortor-eu-varius-dui-scelerisque" title="Quisque viverra velit tortor, eu varius dui scelerisque">Quisque viverra velit tortor, eu varius dui scelerisque</a></p><div class="counts"><div class="vote-count icon-chevron-up"><span>-1</span></div><div class="ans-count icon-chat-4"><span>1</span></div></div></div></li><li id="q-list-46" class="question-item"><div class="pull-left avatar" data-handle="admin" data-id="1"><a href="./?qa=user/admin"><img src="./?qa=image&amp;qa_blobid=4767315952867940206&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/admin">Rahul Aryan</a> asked</h5><p><a href="./?qa=46/example-of-related-question" title="Example of related question">Example of related question</a></p><div class="counts"><div class="vote-count icon-chevron-up"><span>2</span></div><div class="ans-count icon-chat-4"><span>5</span></div></div></div></li><li id="q-list-38" class="question-item"><div class="pull-left avatar" data-handle="one_eyed" data-id="11"><a href="./?qa=user/one_eyed"><img src="./?qa=image&amp;qa_blobid=13393310319980628081&amp;qa_size=40"></a></div><div class="list-right"><h5><a href="./?qa=user/one_eyed">one_eyed</a> asked</h5><p><a href="./?qa=38/pellentesque-tincidunt-porta-laoreet-dilom" title="Pellentesque tincidunt porta laoreet dilom">Pellentesque tincidunt porta laoreet dilom</a></p><div class="counts"><div class="vote-count icon-chevron-up"><span>2</span></div><div class="ans-count icon-chat-4"><span>1</span></div></div></div></li></ul>		</div>
+                                                    </div> </div></div></div></div></div> </div> </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div style="position:absolute; left:-9999px; top:-9999px;">
+            <span id="qa-waiting-template" class="qa-waiting">...</span>
+        </div>
+    </section>
+{% endblock %}

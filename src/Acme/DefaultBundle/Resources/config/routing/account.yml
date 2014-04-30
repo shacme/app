@@ -1,0 +1,4 @@
+#帐户中心
+account_index:
+    pattern:  /
+    defaults: { _controller: "AcmeDefaultBundle:Account:index" }

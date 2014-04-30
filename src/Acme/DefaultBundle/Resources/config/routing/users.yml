@@ -1,0 +1,4 @@
+#用户列表
+users_index:
+    pattern:  /
+    defaults: { _controller: "AcmeDefaultBundle:Users:index" }

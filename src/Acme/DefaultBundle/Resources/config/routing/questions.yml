@@ -1,0 +1,4 @@
+#问题
+questions_index:
+    pattern:  /{sort}
+    defaults: { _controller: "AcmeDefaultBundle:Questions:index", sort: default }

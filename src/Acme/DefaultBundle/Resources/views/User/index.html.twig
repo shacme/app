@@ -1,0 +1,139 @@
+{# src/Acme/DefaultBundle/Resources/views/Default/index.html.twig #}
+{% extends 'AcmeDefaultBundle::layout.html.twig' %}
+{% block title %}首页{% endblock %}
+
+{% block js_css %}
+
+{% endblock %} 
+
+{% block main %}
+    <section id="main" class="has-fixed-top">
+
+
+
+
+
+        <header id="mastheader">
+            <div class="page-header">
+                <div class="container">
+                    <div class="page-title pull-left">
+                        <h1>		
+                        </h1>
+                    </div>
+
+
+                    <form method="get" action="./?qa=search" class="form-inline search-form pull-right">
+                        <input type="hidden" name="qa" value="search">	<div class="form-group">
+                            <input type="text" name="q" value="" class="form-control navbar-search" placeholder="Search for questions">
+                        </div>
+                        <button type="submit" class="icon-magnifier btn btn-primary" title="Search"></button>			
+                    </form>
+
+                    <div class="fav-parent">
+                        <a href="#" title="" data-id="favorite_U_22_1" data-code="1-1398805556-2c715f1acc7d9a49bcda6659a28f223ce8e1698e" class="btn fav-btn icon-star-empty btn-warning" data-original-title="Add user test to my favorites"><span>Favourite</span></a>
+                    </div>
+                    <div class="ra-social-output clearfix">
+                        <ul class="inline only-icon">
+                            <li><a target="_blank" href="http://facebook.com/nerdaryan"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/facebook_24.png"><span>facebook</span></a></li>
+                            <li><a target="_blank" href="https://twitter.com/nerdaryan"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/twitter_24.png"><span>twitter</span></a></li>
+                            <li><a target="_blank" href="https://plus.google.com/102280288713981086298"><img style="height:24px;width:24px" src="http://www.demo.local/qa-plugin/ra-social/images/google-plus_24.png"><span>PlusOne</span></a></li>
+                        </ul>
+                    </div>
+                </div>	
+            </div>
+        </header>
+
+
+        <script type="text/javascript">
+            var b = document.getElementsByTagName('body')[0];
+            b.className = b.className.replace('qa-body-js-off', 'qa-body-js-on');
+        </script>
+        <div id="index">
+            <div class="contents ">
+                <div id="user" class="main-parts">
+                    <div id="builder_user" data-name="user" class="dynamic-layout "><div class="ra-row parent ui-draggable">  <div class="item-content"> <div class="ra-container"><div class="container"><div class="row"><div class="col-md-7 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="RA User Menu" class="item-content widget-c">							<ul class="user-page-menu nav nav-tabs">
+                                                            <li><a href="./?qa=user/test">User test</a></li><li><a href="./?qa=user/test/activity">Recent activity</a></li><li><a href="./?qa=user/test/questions">All questions</a></li><li><a href="./?qa=user/test/answers">All answers</a></li><li class="edit-profile-link pull-right"><a id="edit-user" class="btn btn-xs btn-success edit-profile icon-edit" href="http://www.demo.local/?qa=user/test&amp;state=edit">Edit User</a></li><li class="edit-profile-link pull-right"><a class="btn btn-xs btn-primary edit-profile icon-edit" href="http://www.demo.local/?qa=account">Edit</a></li>			</ul>
+
+                                                    </div> </div><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="RA User Cover" class="item-content widget-c">							<div class="user-top clearfix">
+                                                            <a id="upload-cover" class="btn btn-default">Change cover</a>
+                                                            <div class="user-bar">
+                                                                <div class="avatar pull-left">
+                                                                    <a href="./?qa=user/test"><img src="./?qa=image&amp;qa_blobid=2151350950843633819&amp;qa_size=150"></a>					</div>			
+                                                            </div>	
+                                                            <div class="user-bar-holder">
+                                                                <div class="user-stat pull-right">
+                                                                    <ul>
+                                                                        <li class="points">100 <span>Points</span></li>
+                                                                        <li class="followers">0 <span>Followers</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="user-nag">	
+                                                                    <div class="user-buttons pull-right">
+                                                                        <div class="fav-parent">
+                                                                            <a href="#" title="" data-id="favorite_U_22_1" data-code="1-1398805556-2c715f1acc7d9a49bcda6659a28f223ce8e1698e" class="btn fav-btn icon-star-empty btn-warning" data-original-title="Add user test to my favorites"><span>Favourite</span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="user-name">test</h3>				
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div> </div><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="RA User Followers" class="item-content widget-c"></div> </div><div class="ra-row parent ui-draggable">  <div class="item-content"> <div class="ra-container"><div class="row"><div class="col-md-6 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="RA User Questions" class="item-content widget-c">				<div class="widget w-question-list">
+                                                                                <h3 class="widget-title">My Questions</h3>
+                                                                                <ul class="question-list users-widget"></ul>				</div>
+                                                                        </div> </div></div><div class="col-md-6 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="RA User Answers" class="item-content widget-c">				<div class="widget w-question-list">
+                                                                                <h3 class="widget-title">My Answers</h3>
+                                                                                <ul class="question-list users-widget"></ul>				</div>
+                                                                        </div> </div></div></div></div> </div> </div><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="RA User Wall" class="item-content widget-c">				<form name="wallpost" method="post" action="./?qa=user/test#wall">
+                                                            <div class="message-list-form">
+                                                                <div class="qa-form-tall">
+                                                                    <div class="form-group message clearfix">
+                                                                        <textarea name="message" id="message" rows="2" cols="40" class="qa-form-tall-text"></textarea>
+                                                                    </div>
+                                                                    <div class="form-actions">
+                                                                        <input name="dowallpost" onclick="return qa_submit_wall_post(this, true);" value="Add wall post" title="" type="submit" class="btn btn-default btn-post">
+                                                                    </div>
+                                                                </div>
+                                                                <input type="hidden" name="qa_click" value="">
+                                                                <input type="hidden" name="handle" value="test">
+                                                                <input type="hidden" name="code" value="1-1398805556-21bca629852311463714cac3587b33975759c531">
+                                                            </div>
+                                                            <div class="qa-message-list" id="wallmessages">
+                                                                <br>
+                                                                <b>Notice</b>:  Undefined index: raw in <b>F:\wwwroot\dev\demo\qa-theme\dude\inc\blocks.php</b> on line <b>1675</b><br>
+                                                                <div class="message-item">
+                                                                    <div class="message-inner">
+                                                                        <div class="message-head clearfix">
+                                                                            <div class="avatar pull-left"><a href="./?qa=user/"><img src="./?qa=image&amp;qa_blobid=34613087031464436&amp;qa_size=40"></a></div>
+                                                                            <div class="user-detail">
+                                                                                <h5 class="handle"></h5>
+                                                                                <div class="post-meta">
+                                                                                    <div class="asker-meta">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="qa-message-content">
+                                                                            <a href="./?qa=user/test/wall&amp;start=0">View more wall posts...</a>
+                                                                        </div>
+                                                                    </div></div>
+
+                                                            </div> <!-- END qa-message-list -->
+
+                                                        </form>
+                                                    </div> </div></div><div class="col-md-5 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="RA User About" class="item-content widget-c"></div> </div><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="RA Badge History" class="item-content widget-c"><div class="badge-user-block widget"><h3 class="widget-title">Badges</h3><div class="widget-inner"><div class="badge-container-badge">
+                                                                    <span class="user-badge bronze icon-badge" title="Received total of 100 points (Bronze)">100 Club</span>&nbsp;<span class="badge-count">x&nbsp;1</span></div><div class="badge-container-badge">
+                                                                    <span class="user-badge bronze icon-badge" title="Uploaded an avatar image (Bronze)">Photogenic</span>&nbsp;<span class="badge-count">x&nbsp;1</span></div></div></div></div> </div><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="User Activity" class="item-content widget-c">				<div class="widget user-activities"><h3 class="widget-title">test's activities</h3><ul class="question-list"><li>No activity yet.</li></ul></div>
+                                                    </div> </div></div></div></div></div> </div> </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div style="position:absolute; left:-9999px; top:-9999px;">
+            <span id="qa-waiting-template" class="qa-waiting">...</span>
+        </div>
+    </section>
+{% endblock %}

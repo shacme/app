@@ -1,0 +1,4 @@
+#类别
+categories_index:
+    pattern:  /
+    defaults: { _controller: "AcmeDefaultBundle:Categories:index" }
